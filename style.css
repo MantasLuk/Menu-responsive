@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:  'Amita', cursive;
+}
+
+.container{
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+h1{
+    text-align: center;
+    transform: translateY(3em);
+}
+.one{
+    height: 20vh;
+    width: 80vw;
+    border: 2px solid black;
+    position: relative;
+    text-align: justify;
+    padding: .5em;
+    overflow-y: scroll;
+    background-color: gray;
+}
+p{
+    margin-top: 2.5em;
+    font-size: 1rem;
+}
+
+.chicken::before{
+    content: 'Chicken';
+    background-color: lemonchiffon;
+}
+.beef::before{
+    content: 'Beef';
+    color: white;
+    background-color: red
+}
+.sushi::before{
+    content: 'Sushi';
+    background-color: palevioletred
+}
+
+*::before{
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .1em 3em;
+    border-bottom: solid 2px black;
+    border-left: solid 2px black;
+    
+}
+
+
+
+@media (min-width:767px){
+    .container{
+        height: 60vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        gap: 2em;
+        align-content: flex-end;
+     
+    }
+    .chicken, .beef{
+        width: 45vw;
+        height: 20vh;
+    }
+    .sushi{
+        width: 93vw;
+        height: 20vh;
+    }
+    h1{
+        text-align: center;
+        transform: translateY(80px);
+    }
+}
+
+@media (min-width:1200px){
+    .container{
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 1em;   
+    }
+    p{
+        font-size: 1.3em;
+    }
+    .chicken, .beef, .sushi{
+        width: 30vw;
+        height: 40%;
+    }
+    h1{
+        text-align: center;
+        transform: translateY(11rem);
+    }
+}
+
+
+
+
+
+
+
+
