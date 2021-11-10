@@ -100,7 +100,7 @@ p{
     }
     h1{
         text-align: center;
-        transform: translateY(11rem);
+        transform: translateY(9rem);
     }
 }
 
@@ -113,6 +113,7 @@ p{
         }
         p{
             margin-top: 0;
+            font-size: .8rem;
         }
     }
 
