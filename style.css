@@ -6,7 +6,9 @@
     padding: 0;
     font-family:  'Gaegu', cursive;
 }
-
+body{
+    background-color: rgb(252, 178, 104);
+}
 .container{
     height: 100vh;
     display: flex;
@@ -14,13 +16,14 @@
     justify-content: center;
     align-items: center;
     gap: 1em;
+    
 }
 
 h1{
     text-align: center;
     transform: translateY(2em);
     font-size: 3rem;
-    text-shadow: 3px 3px 6px rgb(224, 70, 70);
+    text-shadow: 3px 3px 6px rgb(131, 66, 6);
 }
 
 .one{
@@ -31,6 +34,8 @@ h1{
     text-align: justify;
     overflow-y: scroll;
     background-color: gray;
+    box-shadow: 5px 5px 6px rgb(131, 66, 6);
+    
 }
 
 p{
@@ -42,16 +47,16 @@ p{
 
 .chicken::before{
     content: 'Chicken';
-    background-color: lemonchiffon;
+    background-color: rgb(248, 224, 145);
 }
 .beef::before{
     content: 'Beef';
     color: white;
-    background-color: red
+    background-color: rgb(192, 59, 25)
 }
 .sushi::before{
     content: 'Sushi';
-    background-color: palevioletred
+    background-color: rgb(221, 174, 190)
 }
 
 *::before{
